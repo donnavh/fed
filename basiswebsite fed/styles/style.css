@@ -1,12 +1,14 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
-
+/* CSS HOMEPAGINA */
 
 
 
@@ -15,12 +17,23 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#fff;
+	--color-text: #111;
+	--color-background: #fafaf7;
+	--color-title: #fff;
+	--red: #b71234;
+	--white: #fff;
+	--color-section: #ede5d5;
 }
 
-
-
+/* 
+link <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+ */
+/* 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+</style> */
 
 
 /****************/
@@ -29,18 +42,151 @@
 
 /* jouw code */
 
-html{
+html {
 	background-color: var(--color-background);
-	font-family: sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--color-background);
 }
 
+/* over de hele pagina */
+body {
 
-header ul{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 1;
+	max-width: ;
+	/* width: 100%; */
+}
+
+/* alle afbeeldingen */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* header bovenaan de pagina  */
+header {
+
+	height: 8em;
+	padding: 0 1em;
 
 	display: flex;
-	list-style-type: none;
+	justify-content: space-evenly;
+
+	width: max-content;
+	position: sticky;
+	top: 0;
+
+	background-color: var(--white);
+
+
+	/* overflow: hidden; */
 }
 
-header ul li:first-of-type{
-	margin-right: auto;
+/* header ul {
+	 display: flex;
+	justify-content: space-between;
+
+	list-style-type: none;
+}  */
+
+/* navigatie in de header */
+header nav {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-100em);
+}
+
+
+
+/* header ul li:first-of-type{
+	display: flex;
+	flex-grow: 1;
+} */
+
+
+
+/* section met efteling hotel afbeelding */
+section:first-of-type {
+	background-image: url(../images/efteling\ hotel.jpeg);
+
+/* 	
+	display: flex;
+	min-height: 26em;
+	background-size: cover;
+	background-position: center center;
+	font-family: var(--primary-font-family);
+	text-align: center;
+	flex-direction: column;
+	justify-content: center; */
+
+
+	 display: flex;
+	min-height: 18em;
+	background-size: cover;
+	background-position: center center;
+	flex-direction: column;
+	max-width: 100%;
+	justify-content: center;
+	text-align: center;
+	color: var(--color-title); 
+
+}
+
+/* titel op de afbeelding */
+section:first-of-type h2 {
+	/* font-family:  ; */
+	/* position: relative; */
+	color: var(--white);
+	font-size: 1.8em;
+}
+
+/* link boven de afbeelding */
+section:first-of-type a {
+	position: relative;
+	color: var(--white);
+	text-decoration: none;
+
+	border: 2px solid var(--white);
+
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+
+}
+
+/* reserveren en tickets kopen */
+section:nth-of-type(2) {
+	 display: flex;
+	justify-content: center; 
+	flex-direction: column;
+
+
+	padding: 15px 30px;
+	background-color: var(--color-background);
+	bottom: -1px;
+
+
+}
+
+section:nth-of-type(2) a {
+
+	color: var(--red);
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.7em;
+	border: 1px solid var(--color-section);
+	margin: 0;
+	padding: 9px 19px;
+}
+
+section:nth-of-type(3) {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 30px;
+
+	background-color: var(--color-background);
+	border: 1px solid var(--color-section);
 }

@@ -79,11 +79,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/breakdown schets.png" alt="">
 
 
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -111,8 +113,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Verborgen menu's,  | en dit             | en ik dit    | en dan ik dat    |uitschuiven als je 
+  |erop klikt. Hoe ook | dit als er tijd is | nog een punt | dit wil ik zeker |alweer?
   | ...            | ...                | ...          | ...              |
 
 
@@ -138,14 +140,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  - gaat al iets soepeler dan vorig jaar omdat ik er iets meer logica in zie 
+  - nog moeite met elementen de juiste grootte te maken
+  - menu in en uit laten schuiven
+
+  <img src="./readme-images/Scherm­afbeelding 2023-10-05 om 15.15.05.png" alt="">
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | - alles op de goede
+  grootte krijgen en 
+  responsive maken
+  -  hamburger
+  menu laten in en uitklappen  | en dit             | en ik dit    | en dan ik dat    |
+  | | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
