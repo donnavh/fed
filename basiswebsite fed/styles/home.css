@@ -1,0 +1,181 @@
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+/* CSS HOMEPAGINA */
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-background: #fafaf7;
+	--color-title: #fff;
+	--red: #b71234;
+	--white: #fff;
+	--color-section: #ede5d5;
+
+}
+
+@font-face {
+	font-family: Verner;
+	src: url(../fonts/Verner.woff2);
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Regular.woff2);
+	font-weight: Regular;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Bold.woff2);
+	font-weight: Bold;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Italic.woff2);
+	font-weight: Italic;
+}
+
+
+
+
+/* section met efteling hotel afbeelding */
+section:first-of-type {
+    background-image: url(../images/efteling\ hotel.jpeg);
+
+    font-family: Verner;
+
+    display: flex;
+    min-height: 18em;
+    
+    background-size: cover;
+    background-position: center center;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-title);
+
+
+
+}
+
+/* titel op de afbeelding */
+section:first-of-type h2 {
+    /* font-family:  ; */
+    /* position: relative; */
+    color: var(--white);
+    font-size: 1.8em;
+}
+
+/* link boven de afbeelding */
+section:first-of-type a {
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+
+    border: 2px solid var(--white);
+    border-radius: .3em;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 25em;
+    min-width: 8em;
+
+
+}
+
+/* reserveren en tickets kopen */
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    padding: 15px 30px;
+    background-color: var(--color-background);
+    bottom: -1px;
+
+
+}
+
+section:nth-of-type(2) a {
+
+    color: var(--red);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    border: 1px solid var(--color-section);
+    margin: 0;
+    padding: .6em 1.2em;
+}
+
+
+/* sectie vandaag  */
+section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    padding: .6em 1.2em;
+    margin: 2em;
+
+    background-color: var(--color-background);
+    border: 1px solid var(--color-section);
+}
+
+section:nth-of-type(3) h2{
+    font-family: OpenSans;
+    font-weight: Regular;
+        color: var(--red);
+}
+
+section:nth-of-type(3) a{
+    /* text-decoration: none; */
+    font-family: OpenSans;
+    font-weight: Regular;
+    color: var(--color-text);
+}
+
+/* sectie kunnen we je helpen */
+section:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+
+
+}
+
+/* sectie kunnen we je helpen */
+section:nth-of-type(4) ul {
+
+    list-style-type: none;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    padding: .6em 1.2em;
+    margin: 1.5em;
+
+    border: solid 1px var(--color-section);
+    /* display: flex;
+	overflow: scroll; */
+
+}
+
+
+/* section:nth-of-type(4) ul li{
+	/* padding: 3em; */
+/* margin: 2em ; */
+/* } */

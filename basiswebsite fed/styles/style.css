@@ -23,18 +23,32 @@
 	--red: #b71234;
 	--white: #fff;
 	--color-section: #ede5d5;
+
 }
 
-/* 
-link <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
- */
-/* 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-</style> */
 
+@font-face {
+	font-family: Verner;
+	src: url(../fonts/Verner.woff2);
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Regular.woff2);
+	font-weight: regular;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Bold.woff2);
+	font-weight: Bold;
+}
+
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Italic.woff2);
+	font-weight: Italic;
+}
 
 /****************/
 /* JOUW STYLING */
@@ -55,9 +69,20 @@ body {
 	display: flex;
 	flex-direction: column;
 	line-height: 1;
-	max-width: ;
+
+	margin:0;
+
 	/* width: 100%; */
 }
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-family: OpenSans;
+	font-weight: regular;
+}
+
+
 
 /* alle afbeeldingen */
 img {
@@ -68,36 +93,97 @@ img {
 /* header bovenaan de pagina  */
 header {
 
-	height: 8em;
-	padding: 0 1em;
+	height: 3.4em;
+	/* padding: 0 1em; */
 
 	display: flex;
-	justify-content: space-evenly;
 
-	width: max-content;
+
 	position: sticky;
 	top: 0;
 
 	background-color: var(--white);
+	background-color: brown;
 
-
-	/* overflow: hidden; */
+	z-index: 10;
+	
 }
 
-/* header ul {
-	 display: flex;
-	justify-content: space-between;
+/* 
+nav button{
+	justify-self: start;
+} */
 
-	list-style-type: none;
-}  */
+
 
 /* navigatie in de header */
 header nav {
+
+	position: fixed;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	transform: translate(-100em);
+	
+
+	
+	transform: translateX(100em);
+	
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--color-background);
+
+
+
 }
+
+header nav ul li{
+	/* padding: 1em; */
+	list-style-type: none;
+	border: 1px solid var(--color-section);
+
+	display: grid;
+	align-content: start;
+	/* gap:1em; */
+}
+
+header nav button img{
+	position:relative;
+	top: 1.2em;
+
+}
+
+header ul h2{
+	
+}
+
+
+
+
+nav.toonMenu {
+	transform: translateX(0em);
+	transition: translate .3s;
+}
+
+header>a:first-child {
+	margin-right: auto;
+}
+
+header button {
+	display: flex;
+	align-items: center;
+
+	background: none;
+	border: none;
+	cursor: pointer; 
+	
+	max-width: 3em;
+	/* width: 2em;
+	height: 4em; */
+}
+
 
 
 
@@ -108,22 +194,27 @@ header nav {
 
 
 
-/* section met efteling hotel afbeelding */
-section:first-of-type {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* 
+/*section met efteling hotel afbeelding */
+/* section:first-of-type {
 	background-image: url(../images/efteling\ hotel.jpeg);
 
-/* 	
+	font-family: Verner;
+
 	display: flex;
-	min-height: 26em;
-	background-size: cover;
-	background-position: center center;
-	font-family: var(--primary-font-family);
-	text-align: center;
-	flex-direction: column;
-	justify-content: center; */
-
-
-	 display: flex;
 	min-height: 18em;
 	background-size: cover;
 	background-position: center center;
@@ -131,47 +222,49 @@ section:first-of-type {
 	max-width: 100%;
 	justify-content: center;
 	text-align: center;
-	color: var(--color-title); 
+	color: var(--color-title);
 
-}
+} */
 
 /* titel op de afbeelding */
-section:first-of-type h2 {
+/* section:first-of-type h2 {
 	/* font-family:  ; */
 	/* position: relative; */
-	color: var(--white);
+	/* color: var(--white);
 	font-size: 1.8em;
-}
+} */ 
 
 /* link boven de afbeelding */
-section:first-of-type a {
+/* section:first-of-type a {
 	position: relative;
 	color: var(--white);
 	text-decoration: none;
 
 	border: 2px solid var(--white);
+	border-radius: .3em;
 
 	padding-bottom: 5px;
 	padding-top: 5px;
 
-
-}
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 25em;
+	min-width: 8em;
+} */
 
 /* reserveren en tickets kopen */
-section:nth-of-type(2) {
-	 display: flex;
-	justify-content: center; 
+/* section:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
 
 
 	padding: 15px 30px;
 	background-color: var(--color-background);
 	bottom: -1px;
+} */
 
-
-}
-
-section:nth-of-type(2) a {
+/* section:nth-of-type(2) a {
 
 	color: var(--red);
 	text-align: center;
@@ -179,14 +272,44 @@ section:nth-of-type(2) a {
 	font-size: 0.7em;
 	border: 1px solid var(--color-section);
 	margin: 0;
-	padding: 9px 19px;
-}
+	padding: .6em 1.2em;
+} */
 
-section:nth-of-type(3) {
+
+/* sectie vandaag  */
+/* section:nth-of-type(3) {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 30px;
+	padding: .6em 1.2em;
+	margin: 2em;
 
 	background-color: var(--color-background);
 	border: 1px solid var(--color-section);
-}
+} */
+
+/* section:nth-of-type(4) {
+	display: grid;
+	grid-template-columns: 1.5em 1fr 1.5em;
+} */
+
+/* sectie kunnen we je helpen
+section:nth-of-type(4) ul {
+
+	list-style-type: none;
+
+	grid-column-start: 1;
+	grid-column-end: -1;
+
+	padding: .6em 1.2em;
+	margin: 1.5em;
+
+	border: solid 1px var(--color-section);
+	/* display: flex;
+	overflow: scroll; */
+/* } */  
+
+
+/* section:nth-of-type(4) ul li{
+	/* padding: 3em; */
+/* margin: 2em ; } */
+/* */
