@@ -45,9 +45,10 @@
 			<button>
 				<img src="./images/close.png" alt="closing button">
 			</button>
+			<button><h3>Reserveren</h3></button>
 			<ul>
 				<h2>Ontdek het Park</h2>
-				<li><a href="#">Het park</a></li>
+				<li><a href="./park.html">Het park</a></li>
 				<li><a href="#">Alle seizoenen geopend</a></li>
 				<li><a href="#">Meer Efteling</a></li>
 			</ul>
@@ -81,10 +82,12 @@
 		<!-- section 2 -->
 		<section>
 			<a href="#">
-				<h2> Reserveren en tickets kopen</h2>
+				<h2> Reserveren en tickets kopen</h2> 
+				<img src="./images/arrow-point-to-right.png" alt="pijl om door te gaan">
 			</a>
 			<a href="#">
 				<h2>Blijf slapen</h2>
+				<img src="./images/arrow-point-to-right.png" alt="pijl om door te gaan">
 			</a>
 		</section>
 
@@ -94,7 +97,20 @@
 			<a href="#">Bekijk alle openingstijden</a>
 		</section>
 
-		<!-- section 4 -->
+
+		<!-- Section 4 -->
+		<section>
+			<h2>Sprookjesachtig overnachten in de Efteling</h2>
+			<ul>
+				<li>Kinderen t/m 3 jaar gratis</li>
+				<li>Onbeperkt toegang tot de Efteling tijdens je verblijf</li>
+				<li>Onze sfeervolle hotels en vakantieparken liggen direct naar het attractiepark</li>
+			</ul>
+			<a href="Ontdek alle accomodaties">Ontdek alle accomodaties</a>
+			<img src="./images/efteling overnachten.jpeg" alt="gezin dat een efteling huisje binnenloopt">
+		</section>
+
+		<!-- section 5 -->
 		<section>
 			<ul>
 				<li>
@@ -104,7 +120,7 @@
 						<p>Stel je vraag <time>24 uur per dag</time>aan onze digitale collega Pennenveer. Of kijk bij
 							onze veelgestelde vragen. Misschien staat jouw antwoord daar al tussen!</p>
 						<img src="./images/pardoes.jpeg" alt="efteling mascotte pardoes in de efteling">
-						<a href="#">Stel je vraag</a>
+						<button>Stel je vraag</button>
 					</a>
 				</li>
 
@@ -114,7 +130,7 @@
 						<p>Bekijk hoe laat de poorten van de Efteling openen en aan het einde van de dag weer sluiten,
 							welke attracties er in onderhoud zijn en wat de verwachte drukte is.</p>
 						<img src="./images/poort efteling.jpeg" alt="ingang van de efteling op een zonnige dag">
-						<a href="#">Bekijk de openingstijden</a>
+						<button>Bekijk de openingstijden</button>
 					</a>
 				</li>
 				<li>
@@ -122,19 +138,21 @@
 						<h2>CARO, een betoverende Efteling-theatershow</h2>
 						<p>Een visueel spektakel in het Efteling Theater voor de hele familie!</p>
 						<img src="./images/caro efteling.jpeg" alt="theater show van de efteling op een carousel">
-						<a href="#">Meer info en tickets</a>
+						<button>Meer info en tickets</button>
 					</a>
 				</li>
 			</ul>
 
 		</section>
 
+		<!-- section 6 -->
 		<section>
 			<h2>Ontdek de wondere wereld van de Efteling</h2>
-			<a href="#">Open de plattegrond</a>
+			<a href="#" aria-label="open de plattegrond van ">Open de plattegrond </a>
 			<img src="./images/efteling-plattegrond.webp" alt="getekende plattegrond van de Efteling">
 		</section>
 
+		<!-- section 7 -->
 		<section>
 			<h2>Lees meer op de Efteling blog</h2>
 			<ul>
@@ -158,16 +176,20 @@
 				</li>
 
 			</ul>
-			<a href="#">Bekijk alle blogs</a>
+			<button>Bekijk alle blogs</button>
 
 		</section>
 	</main>
 	<footer>
+		<img src="./images/question.png" alt="question mark sign">
 		<p>Vragen? We helpen je het antwoord te vinden.</p>
 		<a href="#">Klantenservice & contact</a>
 
+	
+		<details>
+		<summary>Het park</summary>
 		<ul>
-			<h3>Het park</h3>
+	
 			<li><a href="#">Attracties</a></li>
 			<li><a href="#">Openingstijden & drukte</a></li>
 			<li><a href="#">Attracties in onderhoud</a></li>
@@ -176,7 +198,54 @@
 			<li><a href="#">Groepsuitjes</a></li>
 			<li><a href="#">Schoolreisjes</a></li>
 		</ul>
+	   </details>
+
+	   <details>
+		<summary>Over de Efteling</summary>
 		<ul>
+			<li><a href="#">Ons verhaal </a></li>
+			<li><a href="#">Geschiedenis</a></li>
+			<li><a href="#">Organisatie</a></li>
+			<li><a href="#">Werken bij de Efteling</a></li>
+			<li><a href="#">Vacatures</a></li>
+			<li><a href="#">Adres & Route</a></li>
+			<li><a href="#">Pers</a></li>
+		</ul>
+	   </details>
+
+	   <details>
+		<summary>Meer Efteling</summary>
+		<ul>
+			<li><a href="#">Efteling Theater</a></li>
+			<li><a href="#">Efteling Evenementen</a></li>
+			<li><a href="#">Efteling Kids Website</a></li>
+			<li><a href="#">Efteling Kids Radio</a></li>
+			<li><a href="#">Efteling-apps</a></li>
+			<li><a href="#">Efteling Blog</a></li>
+		</ul>
+
+	   </details>
+
+	   <details>
+		<summary>Nieuwsbrief</summary>
+		<ul>
+			<p>Kom alles te weten over de Efteling. Ontvang 1 a 2 keer per maand het laatste Efteling-nieuws, unieke kijkjes achter de schermen, aanbiedingen en meer. </p>
+			<input type="email" name="E-mailadres" id="E-mailadres">
+			<button>Mis Niets!</button>
+			<p>Door op "Mis niets" te klikken meld je je aan voor de nieuwsbrief van de Efteling en ga je akkoord met het privacy statement.</p>
+		</ul>
+	   </details>
+
+	
+	   <section>
+		<button><img src="./images/google play.png" alt=""></button>
+		<button><img src="./images/app-store-badge-nl.png" alt=""></button>
+	</section>
+		
+	  
+	
+
+		<!-- <ul>
 			<h3>Over de Efteling</h3>
 
 		</ul>
@@ -187,7 +256,7 @@
 		<ul>
 			<h3>Nieuwsbrief</h3>
 
-		</ul>
+		</ul> -->
 	</footer>
 
 

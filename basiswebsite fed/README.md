@@ -196,7 +196,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik merk dat er meer voortgang in zit, Ik blijf minder hangen op de kleine dingen die ik niet goed kon uitvogelen vorig jaar. Maar gaan af en toe toch nog sommige dingen mis. Zoals bij het aanspreken van de open en sluit button in de nav sprak ik zo bijvoorbeeld de verkeerde button aan waardoor het niet goed werkte
 
 
   ### Agenda voor meeting
@@ -204,9 +204,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | volgorde in   | Hoe kan ik in de main ervoor zorgen dat de < li > in de tweede < ul > flex-direction column geeft zonder dat de foto van grote verandert?
+Hoe zorg ik ervoor dat de overflow scroll alleen in de playlist is en niet in de hele header?
+Moet ik voor de @media Hidden gebruiken of de breedte aangeven of moet dit gecombineerd?             | en ik dit    | en dan ik dat    |
+  | sections aan- |  | nog een punt | dit wil ik zeker |
+  | passen       | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -257,8 +259,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. w3cschools
+  2. chatgpt, geen directe code overgenomen maar meer om dingen beter te begrijpen
   3. ...
 
 </details>

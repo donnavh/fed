@@ -35,7 +35,7 @@
 @font-face {
 	font-family: OpenSans;
 	src: url(../fonts/OpenSans-Regular.woff2);
-	font-weight: regular;
+	font-weight: Regular;
 }
 
 @font-face {
@@ -50,6 +50,18 @@
 	font-weight: Italic;
 }
 
+@font-face {
+	font-family: ErnestineWeb;
+	src: url(../fonts/ErnestineWeb.woff2);
+	font-weight: Regular;
+}
+
+@font-face {
+	font-family: ErnestineWeb;
+	src: url(../fonts/ErnestineWeb-Bold.woff2);
+	font-weight: bold;
+}
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -58,7 +70,7 @@
 
 html {
 	background-color: var(--color-background);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: OpenSans;
 	background-color: var(--color-background);
 }
 
@@ -70,16 +82,22 @@ body {
 	flex-direction: column;
 	line-height: 1;
 
-	margin:0;
+	margin: 0;
+	background-color: var(--color-background);
+	font-family: OpenSans;
+	font-weight: Regular;
 
+	/* max-width: 100%; */
 	/* width: 100%; */
 }
 
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	font-family: OpenSans;
-	font-weight: regular;
+	/* font-family:OpenSans; */
+	/* font-weight: regular; */
+	margin-bottom: 2em;
+
 }
 
 
@@ -103,10 +121,10 @@ header {
 	top: 0;
 
 	background-color: var(--white);
-	background-color: brown;
+	background-color: var(--color-background);
 
 	z-index: 10;
-	
+
 }
 
 /* 
@@ -123,11 +141,13 @@ header nav {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	
 
-	
+
+
 	transform: translateX(100em);
-	
+
+
+
 
 	top: 0;
 	bottom: 0;
@@ -135,11 +155,11 @@ header nav {
 	right: 0;
 	background-color: var(--color-background);
 
-
-
 }
 
-header nav ul li{
+/* @media  */
+
+header nav ul li {
 	/* padding: 1em; */
 	list-style-type: none;
 	border: 1px solid var(--color-section);
@@ -147,17 +167,30 @@ header nav ul li{
 	display: grid;
 	align-content: start;
 	/* gap:1em; */
+
+	margin: 1em;
+	padding: 1em;
+	border-radius: .2;
 }
 
-header nav button img{
-	position:relative;
+header nav button img {
+	position: relative;
 	top: 1.2em;
 
 }
 
-header ul h2{
-	
+header nav button:nth-of-type(2) {
+
+	display: grid;
+	grid-template-columns: 1fr;
+
+	background-color: var(--red);
+	color: var(--white);
 }
+
+/* header ul h2{
+
+} */
 
 
 
@@ -177,12 +210,103 @@ header button {
 
 	background: none;
 	border: none;
-	cursor: pointer; 
-	
+	cursor: pointer;
+
 	max-width: 3em;
 	/* width: 2em;
 	height: 4em; */
 }
+
+
+footer {
+	background-color: var(--white);
+	border-top: 1px solid var(--color-section);
+}
+
+footer details>summary {
+	list-style: none;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	margin-top:1em ;
+	border-bottom: 1px solid var(--color-section);
+}
+
+footer details:first-of-type{
+	margin-top: 1em;
+	border-top: 1px solid var(--color-section);
+}
+footer button{
+	display: flex;
+	size: 50%;
+	border: none;
+	background-color: var(--white);
+}
+
+/* footer img{
+	max-width: 20%;
+} */
+
+footer a{
+	color: var(--color-text);
+
+}
+
+footer section{
+	display: flex;
+	margin: 1em;
+}
+
+
+
+details[open] summary + ul {
+	
+	list-style-type: none;
+
+}
+
+details[open] summary + ul li{
+	
+	padding: .5em;
+
+}
+details[open] summary + ul li a {
+	color: var(--color-text);
+	font-family: OpenSans;
+	font-weight: Regular;
+	text-decoration: none;
+	padding: .5em;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}
+
+details>summary::after {
+	content: "+";
+	transition: .5s;
+	display: block;
+	position: relative;
+}
+
+details[open]>summary::after {
+	content: "-";
+	color: red;
+	list-style-type: none;
+
+	/* rotate: 45deg; */
+}
+
+details[open]>summary::after ul {
+	list-style-type: none;
+}
+
+/* footer section{
+	background: none;
+	background-color: var(--color-background);
+} */
+
 
 
 
@@ -229,10 +353,10 @@ header button {
 /* titel op de afbeelding */
 /* section:first-of-type h2 {
 	/* font-family:  ; */
-	/* position: relative; */
-	/* color: var(--white);
+/* position: relative; */
+/* color: var(--white);
 	font-size: 1.8em;
-} */ 
+} */
 
 /* link boven de afbeelding */
 /* section:first-of-type a {
@@ -306,7 +430,7 @@ section:nth-of-type(4) ul {
 	border: solid 1px var(--color-section);
 	/* display: flex;
 	overflow: scroll; */
-/* } */  
+/* } */
 
 
 /* section:nth-of-type(4) ul li{

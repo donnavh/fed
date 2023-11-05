@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* CSS HOMEPAGINA */
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text: #111;
+    --color-background: #fafaf7;
+    --color-title: #fff;
+    --red: #b71234;
+    --white: #fff;
+    --color-section: #ede5d5;
+    --brown: #4d3928;
+
+
+}
+
+@font-face {
+    font-family: Verner;
+    src: url(../fonts/Verner.woff2);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.woff2);
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Bold.woff2);
+    font-weight: Bold;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Italic.woff2);
+    font-weight: Italic;
+}
+
+@font-face {
+    font-family: ErnestineWeb;
+    src: url(../fonts/ErnestineWeb.woff2);
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: ErnestineWeb;
+    src: url(../fonts/ErnestineWeb-Bold.woff2);
+    font-weight: bold;
+}
+
+main section:nth-of-type(1){
+    background-image: url(../images/1280x630-sprookjesboom.jpg);
+
+    font-family: Verner;
+
+    display: flex;
+    min-height: 18em;
+
+    background-size: cover;
+    background-position: center center;
+    flex-direction: column;
+    max-width: 100%;
+  
+}
+
+
+main section:first-of-type h2 {
+    /* font-family:  ; */
+    position: relative;
+    top:3em;
+    left: 6em;
+    color: var(--white);
+    font-size: 2em;
+}
+
+main section:nth-of-type(2) h2{
+    display: flex;
+    text-align: center;
+    color: var(--red);
+
+}
+
+main section:nth-of-type(2) p {
+    font-family: ErnestineWeb;
+}

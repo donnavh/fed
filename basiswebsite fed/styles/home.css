@@ -1,8 +1,7 @@
-
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -14,51 +13,66 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text: #111;
-	--color-background: #fafaf7;
-	--color-title: #fff;
-	--red: #b71234;
-	--white: #fff;
-	--color-section: #ede5d5;
+    /* startje */
+    --color-text: #111;
+    --color-background: #fafaf7;
+    --color-title: #fff;
+    --red: #b71234;
+    --white: #fff;
+    --color-section: #ede5d5;
+    --brown: #4d3928;
+
 
 }
 
 @font-face {
-	font-family: Verner;
-	src: url(../fonts/Verner.woff2);
+    font-family: Verner;
+    src: url(../fonts/Verner.woff2);
 }
 
 @font-face {
-	font-family: OpenSans;
-	src: url(../fonts/OpenSans-Regular.woff2);
-	font-weight: Regular;
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.woff2);
+    font-weight: Regular;
 }
 
 @font-face {
-	font-family: OpenSans;
-	src: url(../fonts/OpenSans-Bold.woff2);
-	font-weight: Bold;
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Bold.woff2);
+    font-weight: Bold;
 }
 
 @font-face {
-	font-family: OpenSans;
-	src: url(../fonts/OpenSans-Italic.woff2);
-	font-weight: Italic;
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Italic.woff2);
+    font-weight: Italic;
+}
+
+@font-face {
+    font-family: ErnestineWeb;
+    src: url(../fonts/ErnestineWeb.woff2);
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: ErnestineWeb;
+    src: url(../fonts/ErnestineWeb-Bold.woff2);
+    font-weight: bold;
 }
 
 
 
 
 /* section met efteling hotel afbeelding */
-section:first-of-type {
+main section:first-of-type {
     background-image: url(../images/efteling\ hotel.jpeg);
 
     font-family: Verner;
+    /* font-size: 1em; */
 
     display: flex;
     min-height: 18em;
-    
+
     background-size: cover;
     background-position: center center;
     flex-direction: column;
@@ -67,29 +81,31 @@ section:first-of-type {
     text-align: center;
     color: var(--color-title);
 
-
-
 }
 
 /* titel op de afbeelding */
-section:first-of-type h2 {
+main section:first-of-type h2 {
     /* font-family:  ; */
     /* position: relative; */
     color: var(--white);
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 /* link boven de afbeelding */
-section:first-of-type a {
+main section:first-of-type a {
     position: relative;
     color: var(--white);
     text-decoration: none;
+    font-family:ErnestineWeb;
+    font-size: 1em;
 
     border: 2px solid var(--white);
     border-radius: .3em;
 
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: .8em;
+
+    /* padding-bottom: 5px;
+    padding-top: 5px; */
 
     margin-right: auto;
     margin-left: auto;
@@ -101,6 +117,8 @@ section:first-of-type a {
 
 /* reserveren en tickets kopen */
 section:nth-of-type(2) {
+    position: relative;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,19 +128,62 @@ section:nth-of-type(2) {
     background-color: var(--color-background);
     bottom: -1px;
 
+    font-size: .6em;
+    /* width: 10em; */
 
 }
 
 section:nth-of-type(2) a {
-
-    color: var(--red);
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.7em;
-    border: 1px solid var(--color-section);
+    /* position: absolute;
+    top:-2em;
+    
     margin: 0;
     padding: .6em 1.2em;
+    background-color: var(--color-background); */
+
+    display: flex;
+    flex-grow: 1; 
+    align-items: center;
+
+    color: var(--red);
+
+    font-family: ErnestineWeb;
+    font-weight: regular ;
+    
+   
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 1em;
+    border: 1px solid var(--color-section);
+    border-radius: .5em;
+
+    padding: .6em 1.2em;
 }
+
+section:nth-of-type(2) a:nth-of-type(1){
+    position: absolute;
+    top:-2em;
+    
+    margin: 0;
+    padding: .6em 1.2em;
+    background-color: var(--color-background);
+
+}
+
+section:nth-of-type(2) a:nth-of-type(2){
+    position: absolute;
+    top:-7.3em;
+    
+    margin: 0;
+    padding: .6em 1.2em;
+    background-color: var(--color-background);
+}
+
+/* section:nth-of-type(2) a img {
+    display: flex;
+
+    max-height: 2em;
+} */
 
 
 /* sectie vandaag  */
@@ -130,35 +191,88 @@ section:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     padding: .6em 1.2em;
-    margin: 2em;
+    margin: 1.5em;
 
     background-color: var(--color-background);
     border: 1px solid var(--color-section);
 }
 
-section:nth-of-type(3) h2{
+section:nth-of-type(3) h2 {
     font-family: OpenSans;
     font-weight: Regular;
-        color: var(--red);
+    /* color: var(--red); */
 }
 
-section:nth-of-type(3) a{
+section:nth-of-type(3) a {
     /* text-decoration: none; */
     font-family: OpenSans;
     font-weight: Regular;
     color: var(--color-text);
 }
 
-/* sectie kunnen we je helpen */
+
+
+/* section overnachten */
 section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--color-section);
+    border-radius: .4em;
+
+    padding: .6em 1.2em;
+    margin: 1.5em;
+
+}
+
+/* section:nth-of-type(4) ul {
+  
+} */
+
+section:nth-of-type(4) img {
+    order: -1;
+    width: 100%;
+}
+
+section:nth-of-type(4) h2 {
+    font-family: ErnestineWeb;
+    font-weight: regular;
+    color: var(--red);
+
+}
+
+section:nth-of-type(4) ul li {
+    list-style-type: none;
+
+}
+
+section:nth-of-type(4) a {
+    display: flex;
+    justify-content: center;
+    background-color: var(--red);
+    padding: 1em .5em;
+    color: var(--white);
+    border-radius: .5em;
+    text-decoration: none;
+    width: 15em;
+}
+
+
+
+
+
+/* sectie kunnen we je helpen */
+section:nth-of-type(5) {
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
-
 
 }
 
 /* sectie kunnen we je helpen */
-section:nth-of-type(4) ul {
+section:nth-of-type(5) ul {
+
+    /* display: grid;
+    */
 
     list-style-type: none;
 
@@ -166,16 +280,147 @@ section:nth-of-type(4) ul {
     grid-column-end: -1;
 
     padding: .6em 1.2em;
-    margin: 1.5em;
 
-    border: solid 1px var(--color-section);
-    /* display: flex;
-	overflow: scroll; */
+
+    /* margin: 1.5em; */
+
+    /* border: solid 1px var(--color-section); */
+
+
+
+}
+
+section:nth-of-type(5) ul li {
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    border: 1px solid var(--color-section);
+    border-radius: .4em;
+    padding: 1rem;
+
+    margin-bottom: 1em;
+    gap: 5em;
+
+    text-decoration: none;
+
+    background-color: var(--color-background);
+
+}
+
+section:nth-of-type(5) ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+section:nth-of-type(5) ul li a h2{
+    font-family: ErnestineWeb;
+    color: var(--red);
+}
+
+section:nth-of-type(5) ul li a button{
+    font-family: ErnestineWeb;
+    background-color: var(--color-background);
+    border:.2em solid var(--color-section);
+    border-radius: .5em ;
+    color: var(--red);
+    padding: 1.5em 1em;
+    
+}
+
+/* section:nth-of-type(5) ul li a a {
+    display: flex;
+    order: 5;
+    background-color: var(--red);
+} */
+
+/* section:nth-of-type(5) ul li a h2{
+    order:1;
+} */
+
+section:nth-of-type(5) ul li a a {
+    background-color: var(--red);
+    padding: .5em .5em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+section:nth-of-type(6) {
+    position: relative;
+}   
+
+section:nth-of-type(6) h2{
+    position: absolute;
+    top: 6em;
+    left: 6em;
+
+
+    font-family: Verner;
+    color: var(--white);
+}
+
+section:nth-of-type(6) a{
+    position: absolute;
+    top: 12em;
+    left: 12em;
+    border-radius: .5em;
+    
+    background-color: var(--red);
+    padding: 1.5em;
+    font-family: ErnestineWeb;
 
 }
 
 
-/* section:nth-of-type(4) ul li{
-	/* padding: 3em; */
-/* margin: 2em ; */
-/* } */
+
+
+section:nth-of-type(7) ul {
+
+    display: flex;
+    list-style-type: none;
+    /* overflow-x: auto; */
+  
+
+}
+
+section:nth-of-type(7) ul li {
+    display: block;
+    background-color: var(--white);
+    border: 1px solid var(--color-section);
+    border-radius: 0.5em;
+
+    /* width: 20em; */
+    overflow-x: auto;
+    margin: 1em;
+
+}
+
+section:nth-of-type(7) h2 {
+    display: grid;
+    font-family: OpenSans;
+    font-weight: Italic;
+    color: var(--red);
+}
+
+
+section:nth-of-type(7) button {
+    /* /* display: flex;* */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* justify-content: center; */
+    font-family: ErnestineWeb;
+    color: var(--white);
+    border: 1px solid var(--red);
+
+    box-shadow: 0 0 0 3px white ;
+    padding: .5em 1em;
+    background-color: var(--red) ;
+
+    background-color: var(--red);
+    border-radius: .5em;
+    padding: 1em;
+}
