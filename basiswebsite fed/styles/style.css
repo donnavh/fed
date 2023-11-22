@@ -23,6 +23,7 @@
 	--red: #b71234;
 	--white: #fff;
 	--color-section: #ede5d5;
+	--background-color:#fff;
 
 }
 
@@ -69,9 +70,10 @@
 /* jouw code */
 
 html {
-	background-color: var(--color-background);
-	font-family: OpenSans;
-	background-color: var(--color-background);
+	background-color: var(--background-color);
+	max-width: 100%;
+	
+	
 }
 
 /* over de hele pagina */
@@ -83,19 +85,20 @@ body {
 	line-height: 1;
 
 	margin: 0;
-	background-color: var(--color-background);
+	padding: 0;
+
+	/* overflow-x: hidden; */
+	/* background-color: var(--color-background); */
 	font-family: OpenSans;
 	font-weight: Regular;
 
-	/* max-width: 100%; */
-	/* width: 100%; */
+	
 }
 
 main {
 	display: grid;
-	grid-template-columns: 1fr;
-	/* font-family:OpenSans; */
-	/* font-weight: regular; */
+	/* grid-template-columns: 1fr; */
+	
 	margin-bottom: 2em;
 
 }
@@ -142,22 +145,17 @@ header nav {
 	display: flex;
 	flex-direction: column;
 
-
-
 	transform: translateX(100em);
-
-
-
 
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: var(--color-background);
+	background-color: var(--background-color);
 
 }
 
-/* @media  */
+
 
 header nav ul li {
 	/* padding: 1em; */
@@ -168,14 +166,24 @@ header nav ul li {
 	align-content: start;
 	/* gap:1em; */
 
-	margin: 1em;
+	margin:0;
 	padding: 1em;
 	border-radius: .2;
 }
 
-header nav button img {
-	position: relative;
+header nav ul li a{
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+header nav ul h2{
+	font-size: 1.5em;
+}
+
+header nav button {
+	position: absolute;
 	top: 1.2em;
+	right: .4em;
 
 }
 
@@ -184,9 +192,16 @@ header nav button:nth-of-type(2) {
 	display: grid;
 	grid-template-columns: 1fr;
 
+	transition: .3s;
+	/* rotate: 45deg; */
+
 	background-color: var(--red);
 	color: var(--white);
 }
+
+/* header nav button:nth-of-type(2)::after{
+
+} */
 
 /* header ul h2{
 
@@ -207,6 +222,7 @@ header>a:first-child {
 header button {
 	display: flex;
 	align-items: center;
+	
 
 	background: none;
 	border: none;
@@ -216,6 +232,8 @@ header button {
 	/* width: 2em;
 	height: 4em; */
 }
+
+
 
 
 footer {
@@ -316,6 +334,66 @@ details[open]>summary::after ul {
 	flex-grow: 1;
 } */
 
+@media (min-width:54em){
+
+	body{
+		max-width: 100%;
+	}
+
+
+	header{
+		display: flex;
+		flex-direction: row;
+		margin: 1em;
+		background-color: var(--white);
+	}
+
+	header button,
+	header nav button{
+		display: none;
+	}
+
+	header nav{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		top: 0em;
+
+
+		transform: none;
+		width: unset;
+		padding: none;
+/* 		
+		flex-wrap: wrap; */
+	}
+
+	header nav ul{
+		display: flex;
+		flex-direction: row;
+		align-items: left;
+	}
+
+	header nav ul h2{
+
+		/* position: relative; */
+		background-color: cornflowerblue;
+
+		display: flex;
+	
+
+		/* background-color: var(--background-color); */
+		font-family: ErnestineWeb;
+		flex-direction: row;
+		align-items: center;
+
+	}
+
+	header nav ul li{
+		display: none;
+
+	}
+
+}
 
 
 
@@ -331,109 +409,4 @@ details[open]>summary::after ul {
 
 
 
-/* /* 
-/*section met efteling hotel afbeelding */
-/* section:first-of-type {
-	background-image: url(../images/efteling\ hotel.jpeg);
 
-	font-family: Verner;
-
-	display: flex;
-	min-height: 18em;
-	background-size: cover;
-	background-position: center center;
-	flex-direction: column;
-	max-width: 100%;
-	justify-content: center;
-	text-align: center;
-	color: var(--color-title);
-
-} */
-
-/* titel op de afbeelding */
-/* section:first-of-type h2 {
-	/* font-family:  ; */
-/* position: relative; */
-/* color: var(--white);
-	font-size: 1.8em;
-} */
-
-/* link boven de afbeelding */
-/* section:first-of-type a {
-	position: relative;
-	color: var(--white);
-	text-decoration: none;
-
-	border: 2px solid var(--white);
-	border-radius: .3em;
-
-	padding-bottom: 5px;
-	padding-top: 5px;
-
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 25em;
-	min-width: 8em;
-} */
-
-/* reserveren en tickets kopen */
-/* section:nth-of-type(2) {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-
-
-	padding: 15px 30px;
-	background-color: var(--color-background);
-	bottom: -1px;
-} */
-
-/* section:nth-of-type(2) a {
-
-	color: var(--red);
-	text-align: center;
-	text-decoration: none;
-	font-size: 0.7em;
-	border: 1px solid var(--color-section);
-	margin: 0;
-	padding: .6em 1.2em;
-} */
-
-
-/* sectie vandaag  */
-/* section:nth-of-type(3) {
-	display: flex;
-	flex-direction: column;
-	padding: .6em 1.2em;
-	margin: 2em;
-
-	background-color: var(--color-background);
-	border: 1px solid var(--color-section);
-} */
-
-/* section:nth-of-type(4) {
-	display: grid;
-	grid-template-columns: 1.5em 1fr 1.5em;
-} */
-
-/* sectie kunnen we je helpen
-section:nth-of-type(4) ul {
-
-	list-style-type: none;
-
-	grid-column-start: 1;
-	grid-column-end: -1;
-
-	padding: .6em 1.2em;
-	margin: 1.5em;
-
-	border: solid 1px var(--color-section);
-	/* display: flex;
-	overflow: scroll; */
-/* } */
-
-
-/* section:nth-of-type(4) ul li{
-	/* padding: 3em; */
-/* margin: 2em ; } */
-/* */
